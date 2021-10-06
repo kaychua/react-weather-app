@@ -27,15 +27,16 @@ export default function Weather() {
         <li>Mostly Cloudy</li>
       </ul>
       <div className="row">
-        <div className="col-6">
+        <div className="clear-fix col-6">
           <span>
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="Weather Icon"
+              className="weatherIcon"
             />
           </span>
-          <span>8</span>
-          <span>C° | F°</span>
+          <span className="temperature">8</span>
+          <span className="units"> C° | F°</span>
         </div>
         <div className="col-6">
           <ul>

@@ -9,7 +9,12 @@ function App() {
     <div className="App">
       <div className="container">
         <Weather />
-        <footer>Open-source app coded by Kay Chua</footer>
+        <footer>
+          <a href="https://github.com/kaychua/react-weather-app">
+            Open-source-code
+          </a>{" "}
+          weather app by Kay Chua
+        </footer>
       </div>
     </div>
   );

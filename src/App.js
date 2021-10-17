@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Melbourne, AU" />
         <footer>
           <a href="https://github.com/kaychua/react-weather-app">
             Open-source-code

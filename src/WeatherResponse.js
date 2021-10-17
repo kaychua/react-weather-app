@@ -21,7 +21,7 @@ export default function WeatherResponse(props) {
       "night time right now, no rain, no sun, just some clouds to keep you company",
     "03n":
       "gonna get a bit dark out but you can still see the moon, just a bit if the clouds let you",
-    "04n": "somewhat dark now, have a good evening, hug your friends",
+    "04n": "somewhat dark now, have a good evening & hug your friends!",
     "09n":
       "tearing up a little watching the sun go down, hope your night is going well :)",
     "10n":

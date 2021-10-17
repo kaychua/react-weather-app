@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 import "./Weather.css";
 
@@ -15,6 +16,7 @@ export default function Weather(props) {
       windspeed: response.data.wind.speed,
       description: response.data.weather[0].description,
       icon: `https://http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -41,7 +43,11 @@ export default function Weather(props) {
           <em>{weatherData.city}</em> is The opposite of Sunny
         </h1>
         <ul>
-          <li>last update: 12:00</li>
+          <li>
+            last updated:
+            <br />
+            <FormattedDate date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row">

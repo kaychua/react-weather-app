@@ -8,6 +8,7 @@
 }
 
 .Weather h1 {
+  font-size: 27px;
   margin: 20px 0;
 }
 
@@ -32,18 +33,21 @@
   background-color: rgba(255, 183, 161);
 }
 
-.Weather .weatherIcon {
-  margin-top: -30px;
-  margin-right: 5px;
+.Weather canvas {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 4px;
 }
 
 .Weather .temperature {
   font-size: 50px;
+  position: relative;
+  top: -5px;
 }
 
 .Weather .units {
   position: relative;
-  top: -25px;
+  top: -30px;
 }
 
 footer a {

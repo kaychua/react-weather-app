@@ -1,11 +1,13 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
+import WeatherResponse from "./WeatherResponse";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1 className="simplyWeather col-8">
-        <em>{props.data.city}</em> is The opposite of Sunny
+      <h1 className="simplyWeather col-10">
+        <em>{props.data.city}</em> is <WeatherResponse code={props.data.icon} />
       </h1>
       <ul>
         <li>
@@ -17,13 +19,7 @@ export default function WeatherInfo(props) {
       </ul>
       <div className="row">
         <div className="clearfix col-6">
-          <span>
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Weather Icon"
-              className="weatherIcon"
-            />
-          </span>
+          <WeatherIcon code={props.data.icon} alt={props.data.description} />
           <span className="temperature">{props.data.temperature}</span>
           <span className="units"> C° | F°</span>
         </div>

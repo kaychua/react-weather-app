@@ -5,6 +5,7 @@
   border: 1px solid #fff;
   border-radius: 15px !important;
   color: #f7f7f7;
+  font-size: 16px;
 }
 
 .Weather h1 {
@@ -69,4 +70,24 @@ footer a {
 
 footer a:hover {
   color: rgb(255, 148, 114);
+}
+
+@media screen and (max-width: 768px) {
+  .Weather .temperature {
+    font-size: 50px;
+  }
+
+  .Weather .units {
+    position: relative;
+    top: -23px;
+  }
+
+  .Weather canvas {
+    display: block;
+    width: 60px;
+  }
+
+  .Weather .col-9 {
+    width: 65%;
+  }
 }
